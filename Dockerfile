@@ -8,16 +8,13 @@ FROM bstriner/cuda-10.0-cudnn7-devel-ubuntu16.04
 
 #TF
 RUN python3 -m pip install --upgrade \
+	keras \
 	keras_preprocessing \
 	keras_applications \
-	tf-nightly-gpu \
-	tf-estimator-nightly \
-	tb-nightly \
-	tfp-nightly \
+	tensorflow-gpu==1.14.0 \
+	tensorflow-probability \
 	pysoundfile \
 	cffi \
-	tfa-nightly \
-	tf-agents-nightly\
 	kaldiio \
 	imageio \
 	scipy \
